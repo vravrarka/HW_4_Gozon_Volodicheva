@@ -1,0 +1,1 @@
+public record AccountDto(Guid UserId, decimal Balance);

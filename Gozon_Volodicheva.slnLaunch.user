@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "ApiGateway\\ApiGateway.AppHost\\ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "OrdersService\\OrdersService.AppHost\\OrdersService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PaymentsService\\PaymentsService.AppHost\\PaymentsService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+public record PaymentResult(Guid MessageId, Guid OrderId, string Status, string? Reason, DateTimeOffset OccurredAt);

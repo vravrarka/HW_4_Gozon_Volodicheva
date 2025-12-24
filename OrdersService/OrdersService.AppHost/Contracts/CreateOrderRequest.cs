@@ -1,0 +1,1 @@
+public record CreateOrderRequest(Guid UserId, decimal Amount);

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:8080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DOTNET_ENVIRONMENT": "Development",
+        "DOTNET_DASHBOARD_OTLP_ENDPOINT_URL": "http://localhost:19294",
+        "DOTNET_RESOURCE_SERVICE_ENDPOINT_URL": "http://localhost:20091",
+        "ReverseProxy__Clusters__ordersCluster__Destinations__d1__Address": "http://localhost:8081/",
+        "ReverseProxy__Clusters__paymentsCluster__Destinations__d1__Address": "http://localhost:8082/",
+        "ReverseProxy__Routes__ordersRoute__ClusterId": "ordersCluster",
+        "ReverseProxy__Routes__ordersRoute__Match__Path": "/orders/{**catch-all}",
+        "ReverseProxy__Routes__ordersRoute__Transforms__0__PathRemovePrefix": "/orders",
+
+        "ReverseProxy__Routes__paymentsRoute__ClusterId": "paymentsCluster",
+        "ReverseProxy__Routes__paymentsRoute__Match__Path": "/payments/{**catch-all}",
+        "ReverseProxy__Routes__paymentsRoute__Transforms__0__PathRemovePrefix": "/payments"
+
+      }
+    }
+  }
+}

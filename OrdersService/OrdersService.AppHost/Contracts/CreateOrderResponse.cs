@@ -1,0 +1,1 @@
+public record CreateOrderResponse(Guid OrderId, string Status);

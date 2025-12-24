@@ -1,0 +1,1 @@
+public record TopUpRequest(decimal Amount);
